@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m0cruz</title>
+
+    <!--FONTES-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!--JS-->
+    <script src="/js/script.js"></script>
+</head>
+<body>
+
+    <!--MENU-->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <ul class="navbar-links">
+                <li><a href="https://github.com/m0cruz">m0cruz</a></li>
+            </ul>
+
+            <ul class="navbar-links">
+                <li><a href="#sobremim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--CORPO-->
+    <main class="container">
+        <!--SOBRE MIM-->
+        <section>
+            <h2 id="sobremim"><br>SOBRE MIM</h2>
+            <div class="sobremim">
+                <div class="card card_apresentacao">
+                    <h3>MARLON<br>CRUZ</h3>
+                    <span>Desenvolvedor<br>
+                    marlonjc44@gmail.com<br></span>
+
+                    <p>Sou estudante de Engenharia de Software, 21 anos, muito aficionado com a Tecnologia. Meu interesse pela área começou na infância com os videogames no PlayStation 2, que me despertam a necessidade saber mais de computadores e até os dias de hoje disponho algumas horas nessas maravilhas. A programação entrou mais tarde na minha vida, mas rapidamente se tornou uma paixão. Desenvolvi bem a habilidade de entender o processo computacional, porém tenho ciência de que meu conhecimento em relação a isto deve estar sempre em evolução e sempre há mais o que aprender. <br><br>Atualmente, foco em entender mais sobre as diversas áreas que lidam com Tecnologia da Informação a fim de reunir conhecimentos para tornar-me um profissional de excelência no ramo.</p>
+                </div>
+                <div class="card card_habilidades">
+                    <h3>HABILIDADES</h3>
+                    
+                    <ul class="habilidades">
+                        <li>Domínio de Lógica de Programação</li>
+                        <li>Alta Capacidade Análitica</li>
+                        <li>Ativo em atividades colaborativas</li>
+                        <li>Gerenciamento de Projetos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--FORMAÇÃO-->
+
+        <section>
+            <h2 id="formacao"><br>FORMAÇÃO</h2>
+            <div class="formacao">
+                <div class="card card_formacao">
+                    <h3>CURSANDO</h3>
+                    Bacharelado em Engenharia de Software | UNINTER<br><br>
+                    Técnico em Computação Gráfica | SENAC/SP
+                </div>
+
+                <div class="card card_formacao">
+                    <h3>IDIOMAS</h3>
+                    Português Nativo<br><br>
+                    Inglês Básico
+                </div>
+
+                <div class="card card_formacao">
+                    <h3>FORMAÇÃO MAIS RECENTE</h3>
+                    CCNA 1 - Introdução a Redes | SENAI/SC
+                </div>
+            </div>
+        </section>
+
+        <!--PORTIFÓLIO-->
+
+        <section class="">
+            <h2 id="portifolio"><br>PORTIFÓLIO</h2>
+            <span>Abaixo apresento alguns dos projetos que desenvolvi</span>
+            <div class="portifolio">
+
+                <div class="card card_portifolio card_portifolio_java">
+                    <a href="https://github.com/m0cruz/validadorCPF"><h3>Validador de CPF</h3>
+                    Este projeto foi feito seguindo instruções genéricas de como verificar se um CPF é válido e utilizando de conhecimentos próprios, desenvolvi o código em Java</a>
+                </div>
+
+                <div class="card card_portifolio card_portifolio_csharp"><a href="https://github.com/m0cruz/WeatherForecast-exemploMinimalAPI">
+                    <a href="https://github.com/m0cruz/WeatherForecast-exemploMinimalAPI"><h3>WeatherForecast MinimalAPI</h3>
+                        Este é um projeto que foi feito durante um BootCamp, ele é um demonstrativo de MinimalAPI.</a>
+                </div>
+
+                <div class="card card_portifolio card_portifolio_python">
+                    <a href="https://github.com/m0cruz/blackJack"><h3>BlackJack (jogo de cartas)</h3>
+                    Este projeto foi feito seguido instruções do livro de Introdução a Python escrito por Ljubomir Perkovic</a>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTATO-->
+
+        <section id="contato">
+            <h2>CONTATO</h2>
+            <div class="contato">
+                <form id="contato-form" onsubmit="return simularEnvio(event)">
+                    <input type="text" id="nome" name="nome" placeholder="NOME"><br>
+
+                    <input type="email" id="mail" name="mail" placeholder="E-MAIL"><br>
+
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="DIGITE SUA MENSAGEM"></textarea><br>
+                    <input type="submit" id="submit" value="Enviar">
+                </form>
+
+                <!-- Pop-up de Sucesso -->
+                <div id="popup-sucesso">
+                    <div class="popup sucesso">
+                        <p>Mensagem Enviada com Sucesso!</p>
+                        <button onclick="fecharPopUp()">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- Pop-up de Erro -->
+                <div id="popup-erro">
+                    <div class="popup erro">
+                        <p>O e-mail informado é inválido!</p>
+                        <button onclick="fecharPopUp()">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- Pop-up de Aviso -->
+                <div id="popup-aviso">
+                    <div class="popup aviso">
+                        <p>Preencha todos os campos!</p>
+                        <button onclick="fecharPopUp()">Fechar</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

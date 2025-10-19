@@ -1,0 +1,306 @@
+html{
+    scroll-behavior: smooth; /* Rolagem suave ao clicar em âncoras */
+}
+
+body {
+    background-color: #FFF;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+/****** NAVBAR ******/
+
+.navbar {
+    position: fixed; /* Fixa menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #000;
+    color: #FFF;
+}
+
+.navbar .navbar-content {
+    display: flex; /* Deixa na horizontal */
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-links {
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.navbar .navbar-content .navbar-links a {
+    padding: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.navbar-links a:hover {
+    background-color: #2a2a2a;
+}
+
+/****** MAIN ******/
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centraliza conteúdo */
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+section h2 {
+    font-family: Rubik, sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.card {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/****** SOBRE MIM ******/
+
+.sobremim{
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.card_apresentacao{
+    box-shadow:
+        rgba(0, 0, 0, 0.4) -5px -5px,
+        rgba(0, 0, 0, 0.3) -10px -10px,
+        rgba(0, 0, 0, 0.2) -15px -15px,
+        rgba(0, 0, 0, 0.1) -20px -20px,
+        rgba(0, 0, 0, 0.05) -25px -25px;
+}
+
+.card_apresentacao h3, .card_apresentacao span {
+    text-align: right;
+}
+
+.card_habilidades{
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 5px 5px,
+        rgba(0, 0, 0, 0.3) 10px 10px,
+        rgba(0, 0, 0, 0.2) 15px 15px,
+        rgba(0, 0, 0, 0.1) 20px 20px,
+        rgba(0, 0, 0, 0.05) 25px 25px;
+}
+
+.card_habilidades h3 {
+    text-align: left;
+}
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.habilidades li{
+    list-style-image: url("/img/marca-de-verificacao.png");
+    min-width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+
+/****** FORMAÇÃO ******/
+
+.formacao{
+    margin: 0 auto;
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/****** PORTIFOLIO ******/
+
+.portifolio{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card_portifolio{
+    padding: 2rem;
+    width: 20%;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.card_portifolio:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.card_portifolio a{
+    color: #000;
+    text-decoration: none;
+}
+
+/* Sombras para cards */
+
+.card_portifolio_java{
+    box-shadow:
+        rgba(176, 114, 25, 0.4) 5px 5px,
+        rgba(176, 114, 25, 0.3) 10px 10px,
+        rgba(176, 114, 25, 0.2) 15px 15px,
+        rgba(176, 114, 25, 0.1) 20px 20px,
+        rgba(176, 114, 25, 0.05) 25px 25px;
+}
+
+.card_portifolio_csharp{
+    box-shadow:
+    rgba(23, 134, 0, 0.4) 5px 5px,
+    rgba(23, 134, 0, 0.3) 10px 10px,
+    rgba(23, 134, 0, 0.2) 15px 15px,
+    rgba(23, 134, 0, 0.1) 20px 20px,
+    rgba(23, 134, 0, 0.05) 25px 25px;
+}
+
+.card_portifolio_python{
+    box-shadow: rgba(53, 114, 165, 0.4) 5px 5px,
+    rgba(53, 114, 165, 0.3) 10px 10px,
+    rgba(53, 114, 165, 0.2) 15px 15px,
+    rgba(53, 114, 165, 0.1) 20px 20px,
+    rgba(53, 114, 165, 0.05) 25px 25px;
+}
+
+/****** CONTATO ******/
+
+.contato{
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+#contato-form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#nome, #mail, #mensagem{
+    margin: 0 auto;
+    width: 70%;
+    padding: 1rem;
+    border: 1px solid #999999;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+}
+
+#submit{
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2rem;
+    width: 30%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+    background-color: #000;
+    color: #FFF;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #2a2a2a;
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+/* Fundo escuro */
+#popup-sucesso, #popup-erro, #popup-aviso  {
+    display: none; /* ocultado */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); /* fundo preto*/
+}
+
+/* Caixa do pop-up */
+.popup {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto; /* centraliza top meio */
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Tipos de pop-up */
+.sucesso {
+    background-color: rgba(23, 134, 0);
+    color: #fff;
+}
+
+.erro {
+    background-color: rgba(176, 114, 25);
+    color: #fff;
+}
+
+.aviso {
+    background-color: rgba(53, 114, 165);
+    color: #fff;
+}
+
+#popup button {
+    margin-top: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+}
+
+
+/****** RESPONSIVIDADE ******/
+@media (max-width: 768px) {
+    .sobremim{
+        width: 100%;
+    }
+
+    .sobremim, .formacao, .habilidades, .portifolio, .card_portifolio, .contato, #nome, #mail, #mensagem, #submit{
+        flex-direction: column; /* Empilha os elementos */
+        align-items: center;
+        gap: 20px;
+        width: 100%; /* Aumenta preenchimento */
+}
+}
